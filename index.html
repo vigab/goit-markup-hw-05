@@ -33,7 +33,7 @@
             <nav>
               <ul class="header-menu-items-nav">
                 <li>
-                  <a class="header-menu-items-nav-link" href="index.html">Agencja</a>
+                  <a class="header-menu-items-nav-link current" href="index.html">Agencja</a>
                 </li>
                 <li>
                   <a class="header-menu-items-nav-link" href="portfolio.html">Portfolio</a>
@@ -70,7 +70,7 @@
       <section class="section-title section">
         <div class="container">
           <h1 class="title-main">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button" class="button-main">Zamów usługę
+          <button type="button" class="button-main" data-modal-open>Zamów usługę
           </button>
         </div>
       </section>
@@ -141,6 +141,7 @@
                 width="370"
                 height="294"
               />
+              <p class="title-section-list-item-addon">Aplikacje Komputerowe</p>
             </li>
             <li class="title-section-list-item">
               <img
@@ -149,6 +150,7 @@
                 width="370"
                 height="294"
               />
+              <p class="title-section-list-item-addon">Aplikacje Mobilne</p>
             </li>
             <li class="title-section-list-item">
               <img
@@ -157,6 +159,7 @@
                 width="370"
                 height="294"
               />
+              <p class="title-section-list-item-addon">Rozwiązania Graficzne</p>
             </li>
           </ul>
         </div>
@@ -490,5 +493,12 @@
         </div>
       </div>
     </footer>
+    <!-- Modal-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
